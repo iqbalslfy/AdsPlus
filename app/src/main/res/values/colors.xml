@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0392BF</color>
+    <color name="colorPrimaryDark">#1590C0</color>
+    <color name="colorAccent">#404040</color>
+    <color name="colorButtonOrange">#FF7300</color>
+    <color name="colorButtonGreen">#5DB757</color>
+    <color name="colorGreenCheckin">#A6C586</color>
+    <color name="colorYellow">#FAC000</color>
+    <color name="colorOrangeCheckin">#F69431</color>
+    <color name="colorRedCheckin">#DE0100</color>
+    <color name="colorGreyLight">#ededed</color>
+    <color name="colorGreyLight1">#f2f2f2</color>
+    <color name="white">#FEFEFE</color>
+    <color name="startcolor">#1590C0</color>
+    <color name="endcolor">#42B0BF</color>
+    <color name="green">#6DBA52</color>
+    <color name="button">#58B650</color>
+</resources>

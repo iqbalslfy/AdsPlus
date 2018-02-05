@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/iklandetail"/>
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:padding="3dp"
+        android:text="Semua Dimulai Dari Tokopedia"/>
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:padding="3dp"
+        android:layout_below="@id/title1"
+        android:text="www.tokopedia.com"/>
+
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_alignBottom="@id/website"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:text="Rp 500.000"/>
+
+    <ImageView
+        android:id="@+id/money"
+        android:layout_alignBottom="@id/website"
+        android:layout_toLeftOf="@id/price"
+        android:layout_marginRight="5dp"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/money"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/website"
+        android:background="@color/colorGreyLight"/>
+
+    <TextView
+        android:id="@+id/durasi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_below="@id/view1"
+        android:text="Durasi Tayang Iklan"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/durasiiklan"/>
+
+    <TextView
+        android:id="@+id/durasi"
+        android:layout_alignTop="@id/durasi1"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:text="25 Jan - 28 Mar"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_below="@id/durasi1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGreyLight"/>
+
+    <TextView
+        android:id="@+id/area1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_below="@id/view2"
+        android:text="Area Stiker"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/areastiker"/>
+
+    <TextView
+        android:id="@+id/area"
+        android:layout_alignTop="@id/area1"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Semua Sisi"/>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_below="@id/area1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGreyLight"/>
+
+    <TextView
+        android:id="@+id/wilayah1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_below="@id/view3"
+        android:text="@string/wilayah"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/wilayah"/>
+
+    <TextView
+        android:id="@+id/wilayah"
+        android:layout_alignTop="@id/wilayah1"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Surabaya Barat, Surabaya Selatan"/>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_below="@id/wilayah1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/colorGreyLight"/>
+
+    <TextView
+        android:id="@+id/aturan1"
+        android:layout_below="@id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:padding="3dp"
+        android:textStyle="bold"
+        android:text="@string/aturan_iklan"/>
+
+    <TextView
+        android:id="@+id/aturan"
+        android:layout_below="@id/aturan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:padding="3dp"
+        android:text="@string/aturan_iklan"/>
+
+    <View
+        android:id="@+id/view5"
+        android:layout_below="@id/aturan"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:layout_width="30dp"
+        android:layout_height="1dp"/>
+
+    <Button
+        android:id="@+id/ambil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_green_next"
+        android:textColor="@android:color/white"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_alignTop="@id/view5"
+        android:layout_toLeftOf="@id/view5"
+        android:text="@string/ambil_iklan"/>
+
+    <Button
+        android:id="@+id/tolak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_orange2"
+        android:textColor="@color/colorButtonOrange"
+        android:layout_marginBottom="50dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_alignTop="@id/view5"
+        android:layout_toRightOf="@id/view5"
+        android:text="@string/tolak_iklan"/>
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/historyiklan"
+            android:title="@string/riwayat_iklan" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/historytransaksi"
+            android:title="@string/riwayat_transaksi" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/statuspembayaran"
+            android:title="@string/status_pembayaran" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/message"
+            android:title="@string/pesan" />
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/aboutus"
+            android:title="@string/tentang_kami" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/setting"
+            android:title="@string/pengaturan" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+
+    </group>
+</menu>

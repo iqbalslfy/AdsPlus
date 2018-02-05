@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@color/colorGreyLight1">
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/username"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_below="@id/profile"
+                android:layout_centerHorizontal="true"
+                android:text="Adi Prasetyo"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:layout_below="@id/name"
+                android:layout_centerHorizontal="true"
+                android:text="prasetyoadi@gmail.com"/>
+
+            <TextView
+                android:id="@+id/hp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:layout_below="@id/email"
+                android:layout_centerHorizontal="true"
+                android:text="081234567890"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/car"
+            android:layout_width="50dp"
+            android:layout_below="@id/rel1"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/car"/>
+
+        <TextView
+            android:id="@+id/car1"
+            android:layout_alignTop="@id/car"
+            android:layout_toRightOf="@id/car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:text="W 900 YI"/>
+
+        <TextView
+            android:id="@+id/car2"
+            android:layout_below="@id/car1"
+            android:layout_toRightOf="@id/car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Avanza"/>
+
+        <Button
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/car"
+            android:background="@drawable/bg_button_grey2"
+            android:text="@string/lihat_detail"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/car"
+            android:background="@color/colorGreyLight"/>
+
+        <ImageView
+            android:id="@+id/motor"
+            android:layout_width="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/view1"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/motor"/>
+
+        <TextView
+            android:id="@+id/motor1"
+            android:layout_alignTop="@id/motor"
+            android:layout_toRightOf="@id/motor"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Daftarkan motor Anda"/>
+
+        <TextView
+            android:id="@+id/motor2"
+            android:layout_below="@id/motor1"
+            android:layout_toRightOf="@id/motor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/motor"
+            android:background="@drawable/bg_button_grey2"
+            android:text="@string/daftar_sekarang"/>
+
+    </RelativeLayout>
+</ScrollView>

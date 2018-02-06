@@ -22,7 +22,7 @@ public class PembayaranActivity extends AppCompatActivity {
         super.onCreate(bundle);
         setContentView(R.layout.activity_pembayaran);
         initToolbar();
-        initView();
+//        initView();
     }
 
     private void initView() {
@@ -30,7 +30,6 @@ public class PembayaranActivity extends AppCompatActivity {
         viewPager = (ViewPager) findViewById(R.id.vp_pemb);
         adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragments(new Pembayaran1Fragment(), "Status Pembayaran");
-
 
     }
 

@@ -1,6 +1,5 @@
 package com.tamboraagungmakmur.adsplus.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -24,7 +23,6 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
 import com.tamboraagungmakmur.adsplus.R;
-import com.tamboraagungmakmur.adsplus.Verification;
 
 import java.util.concurrent.TimeUnit;
 

@@ -3,21 +3,20 @@ package com.tamboraagungmakmur.adsplus;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.ViewPager;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.tamboraagungmakmur.adsplus.activity.LoginActivity;
 
@@ -39,16 +38,6 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setVisibility(View.GONE);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -66,8 +55,6 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void initView() {
-
-
         SharedPreferences sharedPreferences = getSharedPreferences("user", 0);
         name.setText(sharedPreferences.getString("name", null));
         email.setText(sharedPreferences.getString("email", null));
@@ -226,21 +213,20 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_riwayat_iklan) {
+            Toast.makeText(this, "Clicked Riwayat Iklan" , Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.nav_riwayat_transaksi) {
+            Toast.makeText(this, "Clicked Riwayat Transaksi", Toast.LENGTH_SHORT).show();
 
-        } else if (id == R.id.nav_slideshow) {
-            Intent intent = new Intent(MainActivity.this, PembayaranActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
+        } else if (id == R.id.nav_status_pembayaran) {
+            Toast.makeText(this, "Clicked Status Pembayaran", Toast.LENGTH_SHORT).show();
 
-        } else if (id == R.id.nav_manage) {
-
+        } else if (id == R.id.nav_pesan) {
+            Toast.makeText(this, "Clicked Pesan", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_aboutus) {
-
+            Toast.makeText(this, "Clicked Tentang Kami", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_setting) {
-
+            Toast.makeText(this, "Clicked Pengaturan", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_logout) {
             SharedPreferences sharedPreferences = getSharedPreferences("user", 0);
             SharedPreferences.Editor editor = sharedPreferences.edit();

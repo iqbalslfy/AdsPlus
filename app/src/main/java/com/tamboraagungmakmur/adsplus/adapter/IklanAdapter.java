@@ -7,9 +7,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.tamboraagungmakmur.adsplus.IklanDetActivity;
+import com.tamboraagungmakmur.adsplus.Model.Model_Iklan;
 import com.tamboraagungmakmur.adsplus.R;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by innan on 11/30/2017.
@@ -17,42 +26,52 @@ import com.tamboraagungmakmur.adsplus.R;
 
 public class IklanAdapter extends RecyclerView.Adapter<IklanAdapter.IklanViewHolder> {
 
+
+    private List<Model_Iklan> iklanList = new ArrayList<>();
     private Context context;
+
+    public class IklanViewHolder extends RecyclerView.ViewHolder {
+        @BindView(R.id.ImageIklan)
+        ImageView ImageIklan;
+
+        @BindView(R.id.ambil)
+        Button ambil;
+
+        @OnClick(R.id.ambil)
+        public void onViewClicked() {
+            Intent intent = new Intent(context, IklanDetActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            context.startActivity(intent);
+        }
+
+        public IklanViewHolder(View itemView) {
+            super(itemView);
+            ButterKnife.bind(this, itemView);
+        }
+    }
+
+
+    public IklanAdapter(List<Model_Iklan> iklanList, Context context) {
+        this.iklanList = iklanList;
+        this.context = context;
+    }
 
     @Override
     public IklanViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.iklan_item, parent, false);
-        IklanViewHolder holder = new IklanViewHolder(view);
-        context = parent.getContext();
-        return holder;
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View view = inflater.inflate(R.layout.iklan_item, parent, false);
+
+        return new IklanViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(IklanViewHolder holder, int position) {
-
-        holder.ambil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(context, IklanDetActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                context.startActivity(intent);
-            }
-        });
-
+        holder.ImageIklan.setImageResource(iklanList.get(position).getImg());
     }
 
     @Override
     public int getItemCount() {
-        return 10;
+        return iklanList.size();
     }
 
-    public class IklanViewHolder extends RecyclerView.ViewHolder {
-
-        private Button ambil;
-
-        public IklanViewHolder(View itemView) {
-            super(itemView);
-            ambil = (Button) itemView.findViewById(R.id.ambil);
-        }
-    }
 }

@@ -205,4 +205,9 @@
         <item>Mojokerto</item>
     </string-array>
 
+    <string name="masukkan_kode">Masukkan Kode Verifikasi</string>
+    <string name="verifikasi">Silahkan cek SMS-mu.</string>
+    <string name="verifikasi2">Lalu masukkan kode verifikasi yang tertera. (Tunggu 230 detik)</string>
+    <string name="sukses">Resitrasi Berhasil</string>
+    <string name="kamiakanmenghubungi">Kami akan menghubungi anda via telepon untuk proses selanjutnya</string>
 </resources>

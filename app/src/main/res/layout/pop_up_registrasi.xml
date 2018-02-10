@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Inan And Akbar on long time ago
+  ~ Updated by Muhammad Iqbal on 2018. All Rights reserved
+  ~ Last modified 06/02/18 14:39
+  -->
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_radius_bg_pop_up"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgcentang"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/centang" />
+
+        <TextView
+            android:id="@+id/selamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgcentang"
+            android:layout_marginTop="5dp"
+            android:fontFamily="monospace"
+            android:text="@string/sukses"
+            android:textAlignment="center"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selamat"
+            android:text="@string/kamiakanmenghubungi"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+

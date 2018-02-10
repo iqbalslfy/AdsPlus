@@ -11,22 +11,24 @@
         android:roundIcon="@drawable/louncher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
             android:name=".activity.SplashActivity"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation"
             android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".activity.LoginActivity"
             android:configChanges="orientation" />
@@ -51,7 +53,7 @@
             android:configChanges="orientation" />
         <activity
             android:name=".activity.signup.SignUp3Activity"
-            android:configChanges="orientation" />
+            android:configChanges="orientation"></activity>
 
         <activity
             android:name=".KendaraanDet1Activity"
@@ -71,8 +73,10 @@
             android:theme="@style/ThemeDialog" />
         <activity
             android:name=".activity.PhoneAuthActivity"
-            android:label="@string/label_phone_auth"></activity>
-        <activity android:name=".Verification"></activity>
+            android:label="@string/label_phone_auth" />
+        <activity android:name=".activity.signup.PendaftaranActivity">
+
+        </activity>
     </application>
 
 </manifest>

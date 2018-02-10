@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Inan And Akbar on long time ago
+  ~ Updated by Muhammad Iqbal on 2018. All Rights reserved
+  ~ Last modified 06/02/18 14:04
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <stroke
+        android:width="1dp"
+        android:color="@color/colortextcircle" />
+
+</shape>
+

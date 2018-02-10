@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "25.0.1"
+    buildToolsVersion "26.0.1"
     defaultConfig {
         applicationId "com.tamboraagungmakmur.adsplus"
         minSdkVersion 21
@@ -20,6 +20,7 @@ android {
 }
 
 dependencies {
+    //noinspection GradleCompatible
     compile 'com.google.firebase:firebase-auth:11.0.4'
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -36,8 +37,10 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.squareup.retrofit2:retrofit:2.3.0'
     compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+
+
 }
-
-
 
 apply plugin: 'com.google.gms.google-services'
